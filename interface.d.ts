@@ -1,4 +1,4 @@
-import { API } from "./backend/entrypoint.js";
+import { API } from "./backend/api.js";
 
 declare global {
   interface Window {

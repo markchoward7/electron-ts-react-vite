@@ -1,5 +1,5 @@
 import { app, BrowserWindow } from "electron";
-import registerHandlers from "./backend/entrypoint.js";
+import registerHandlers from "./src/backend/api.js";
 import path from "node:path"
 import url from 'url'
 
@@ -16,7 +16,6 @@ const createWindow = () => {
   });
 
   win.loadFile("index.html");
-  win.webContents.openDevTools();
 };
 
 app.whenReady().then(() => {

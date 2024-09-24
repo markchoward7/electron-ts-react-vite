@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <title>LMS</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
   </head>
   <body>
     <div id="root"></div>
   </body>
-  <script type="module" src="./build/ui/index.js"></script>
+  <script type="module" src="./build/src/ui/index.js"></script>
 </html>
