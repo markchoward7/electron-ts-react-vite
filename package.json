@@ -1,0 +1,27 @@
+{
+  "name": "lms",
+  "version": "1.0.0",
+  "description": "lms",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf build && tsc && vite build && cp -R dist/ build/ && rm -rf dist && rm -rf dist-electron",
+    "start": "npm run build && electron build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^32.1.2",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.7",
+    "vite-plugin-electron": "^0.28.8",
+    "vite-plugin-electron-renderer": "^0.14.6"
+  }
+}
